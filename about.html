@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+       
+        <style>
+            *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'rubik', sans-serif;   
+} 
+head{
+    background-color: rgb(13, 9, 19); 
+
+}
+body{
+    background-image: url('fondecran.png');
+    background-size: cover;
+    box-shadow:  5px 10px 10px 1px rgb(32, 33, 36);    
+} 
+body::before {
+    content: "";
+    position: absolute;    
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(13, 3, 19, 0.7);    
+}
+.header{
+    position: relative;
+    display: flex;
+    margin-top: 0%;
+    width: 100%;
+    height: 55px;
+    justify-content: space-around;
+   
+}
+.parent-link{
+    font-size: 180%;
+    margin-top: -4.5%;
+    margin-left: 700px;
+    font-weight: 600; 
+    
+}
+.social-link{
+    position: relative;
+    display: block;
+    transition: 0.5s;
+    cursor: pointer;
+    text-decoration: none;
+    color: #00aaff;
+    padding: 20px; ;
+    margin: 0%;
+    font-weight: 500;
+}
+.social-link::after{
+    position: absolute;
+    content:"";
+    width: 90%;
+    height: 1px;
+    top: 80%;
+    left: 0;
+    transition: transform 0.5s;
+    transform: scaleX(0);
+    transform-origin: right;
+    background-color: #aa006a;  
+}
+.social-link:hover{
+    color: #aa006a;
+}
+.social-link:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.parent-link, .icon{
+   display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+@keyframes typing{
+    from{width: 0ch;}
+    to {width: 10ch;}
+}
+
+@font-face {
+    font-family: 'Imperial Script';
+    src: url('./font-family/ImperialScript-Regular.ttf');
+}
+#signature{
+    font-family: 'Imperial Script', sans-serif;
+    font-size: 320%;  
+    margin-left: 10px;
+    color: #00aaff;
+    width: 10ch;
+    overflow: hidden;
+    animation: typing 3s steps(15)
+    infinite alternate-reverse;
+}
+.apropos{
+    font-size: 30px;
+    color:#aa006a;
+    position:absolute ;
+    top: -75%;
+    display: flex;
+    backdrop-filter: blur(20px);
+    width: 50%;
+    height: 65%;
+    margin-left: 50%;
+    padding: 20px;
+    position:absolute;
+    text-align: justify;
+    margin: 720px;   
+}
+#cv{
+    position: absolute;
+    display: inline-block;
+    margin-top: 600px; /* Ajoute un espace entre le paragraphe et le bouton */
+    background-color: #007bff; /* Couleur de fond du bouton */
+    color: #fff; /* Couleur du texte du bouton */
+    padding: 10px 20px; /* Espacement intérieur */
+    border-radius: 5px; /* Coins arrondis */
+    text-decoration: none;/* Supprime le soulignement par défaut des liens */
+    margin-left: 995px;
+}
+footer{
+    position: absolute;
+    margin-top: 680px;
+    margin-left: 500px;
+    text-align: center;
+    color: #00aaff;
+}
+        </style>
+<title></title>
+</head>
+    <body>
+        <header class="header">
+       <nav class="container">
+        <div class="logo-box">
+        </div>
+        <p id="signature">Desmornes</p>
+        <div class="parent-link">
+            <a href="file:///C:/Users/Admin/OneDrive/Bureau/Porfolio%20project/portfolio.html#" class="social-link">Accueil</a>
+            <a href="file:///C:/Users/Admin/OneDrive/Bureau/Porfolio%20project/about.html" class="social-link">A propos</a>
+            <a href="file:///C:/Users/Admin/OneDrive/Bureau/Porfolio%20project/projects.html" class="social-link">Projets</a>
+            <a href="file:///C:/Users/Admin/OneDrive/Bureau/Porfolio%20project/veille_technologique.html" class="social-link">veille technologique</a>
+            <a href="file:///C:/Users/Admin/OneDrive/Bureau/Porfolio%20project/contact.html" class="social-link">Contact</a>
+        </div>
+       </nav>
+       </header>
+       <div class="apropos">
+        <p>Je suis Nephtalie Desmornes, une passionnée par le monde de la
+         technologie. Actuellement en deuxième année de BTS SIO (Services Informatiques aux 
+         Organisations) avec une spécialisation en SLAM (Solutions Logicielles et Applications
+         Métier) au lycée Henri Matisse, je suis en train de forger mon chemin dans le domaine 
+         du développement informatique.  J'ai également eu 
+         l'opportunité de mettre en pratique mes connaissances au travers du premier stage que
+         j'ai effectué. Mon portfolio est le reflet de mon parcours et de mes réalisations
+         jusqu'à présent, et j'espère qu'il vous donnera un aperçu approfondi de qui je suis
+          en tant que développeuse web en devenir. </p>
+        </div>
+        <div>
+            <a href="./1_CV_Desmornes_Nephtalie.pdf" id="cv">Télécharger mon CV</a>
+        </div>
+       <footer>
+        <p>&copy; 2023 Nephtalie Desmornes || All right reserved</p>
+        <p>Created by Nephtalie Desmornes</p>
+       </footer>
+    </body>
+</html>
